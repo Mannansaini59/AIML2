@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            border: 2px solid;
+            height: auto;
+            background-color: antiquewhite;
+        }
+
+        .gridd {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .product {
+            box-shadow: 0 2px 5px;
+            background-color: aliceblue;
+
+        }
+
+        .product img {
+            height: 100px;
+        }
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .name {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .description {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            color: rgb(62, 64, 64);
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        @media (max-width:1024px) {
+            .gridd {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:600px) {
+            .gridd {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Responsive product grid</h1>
+
+        <div class="gridd">
+            <div class="product">
+                <img src="https://www.pngmart.com/files/22/T-Shirt-PNG-Photo.png" alt="">
+                <div class="name"> T-shirt</div>
+                <div class="description">high-quality item with good fabric</div>
+                <div class="price">RS-499</div>
+
+            </div>
+            <div class="product">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.zhjJ8hJvG-utfCAb8vBtagHaFN?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="">
+                <div class="name">Shoes </div>
+                <div class="description"> durable,comfortable and stylish for daily use</div>
+                <div class="price">RS-2,999</div>
+
+            </div>
+            <div class="product">
+                <img src="https://static.vecteezy.com/system/resources/previews/029/200/428/non_2x/fabric-men-s-jacket-in-black-muted-colors-background-for-mockup-textile-garment-fashion-material-inspiration-garment-factory-sewing-design-generative-ai-images-photo.jpg"
+                    alt="">
+                <div class="name">Jacket </div>
+                <div class="description">lightweight and comfortable</div>
+                <div class="price">RS-4,999</div>
+
+            </div>
+            <div class="product">
+                <img src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/man_jeans/224584/front_small.png">
+                <div class="name"> Pants</div>
+                <div class="description"> trendy design with premium quality</div>
+                <div class="price">RS-799</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
